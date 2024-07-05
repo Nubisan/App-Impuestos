@@ -1,0 +1,16 @@
+POST http://localhost:3000/registro
+Content-Type: application/json
+
+{
+    "email": "fede@gmail.com",
+    "password": "12345"
+}
+
+###
+POST http://localhost:3000/ingreso
+Content-Type: application/json
+
+{
+    "email": "fede@gmail.com",
+    "password": "12345"
+}

@@ -1,0 +1,49 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" method="post">
+    <div class="form-group">
+      <h1 class="text-center text-primary">Facturas Gastos</h1>
+      <div class="input-group">
+        <label for="ruc" class="form-label">Ruc</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ruc"
+          name="ruc"
+          [(ngModel)]="ruc"
+        />
+      </div>
+      <div class="input-group">
+        <label for="valor" class="form-label">Valor de factura</label>
+        <input
+          type="text"
+          class="form-control"
+          id="valor"
+          name="valor"
+          [(ngModel)]="valor"
+        />
+      </div>
+      <div class="input-group">
+        <label for="gasto" class="form-label">Gasto</label>
+        <select
+          class="form-select"
+          aria-label="gasto"
+          name="gasto"
+          [(ngModel)]="gasto"
+        >
+          <option selected>Escoja el tipo de gasto</option>
+          <option value="Vivienda">Vivienda</option>
+          <option value="Salud">Salud</option>
+          <option value="Salud">Entretenimiento</option>
+          <option value="Educacion">Educación</option>
+          <option value="Salud">Vestimenta</option>
+          <option value="Ninguno">Ninguno</option>
+        </select>
+      </div>
+      <button type="submit">Guardar</button>
+    </div>
+  </form>
+  <div *ngIf="resultado">
+    <h1>Resultado:</h1>
+    <pre>{{ resultado }}</pre>
+  </div>
+</div>

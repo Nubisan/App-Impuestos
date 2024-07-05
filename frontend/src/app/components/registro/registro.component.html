@@ -1,0 +1,14 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" formControlName="email">
+    </div>
+
+    <div class="mb-3">
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" class="form-control" formControlName="password">
+    </div>
+
+    <input type="submit" value="Enviar" class="btn btn-info">
+</form>
+

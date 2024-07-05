@@ -1,0 +1,24 @@
+
+<div class="container">
+    REPORTE DE PAGO IMPUESTO A LA RENTA
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Tipo Gasto</th>
+                    <th scope="col">Ruc</th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let gasto of gastos">
+                    <th scope="row">{{gasto.id}}</th>
+                    <th>{{gasto.tipo}}</th>
+                    <th>{{gasto.ruc}}</th>
+                    <th>{{gasto.valor}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
